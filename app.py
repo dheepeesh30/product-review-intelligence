@@ -7,7 +7,7 @@ from src.preprocess import load_reviews
 from src.analysis import analyze_reviews, product_summary
 from src.retrieval import ReviewIndex
 from src.recommender import recommend
-from src.llm import summarize_reviews, llm_status
+from src.llm import summarize_reviews
 from src.aspects import ASPECT_KEYWORDS
 
 SAMPLE = Path(__file__).parent / "data" / "sample_reviews.csv"
