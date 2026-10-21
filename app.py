@@ -32,7 +32,6 @@ uploaded = st.sidebar.file_uploader("Upload a reviews CSV (optional)", type="csv
 csv_text = uploaded.getvalue().decode("utf-8") if uploaded else SAMPLE.read_text(encoding="utf-8")
 st.sidebar.caption("Required columns: product_id, product_name, review_text. Optional: rating.")
 
-
 df = load_analysed(csv_text)
 summary = product_summary(df)
 index = build_index(csv_text)
